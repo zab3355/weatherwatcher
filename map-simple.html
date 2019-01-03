@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather Watcher</title>
+  <meta name="viewport" content="initial-scale-=1.0">
+  <meta charset="utf-8">
+  <!-- Linked my styles css, icon api fontawesome for weather icons, and font Quicksand used for a majority of my program -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"/>
+</head>
+
+<body>
+  <div id="all">
+    <h1>Weather Watcher</h1>
+      <!-- Buttons defined -->
+    <p>Find out what you should wear, pick a location here: </p>
+    <input id="searchterm" type="text" size="20" maxlength="20" />
+    <button type="button" id="search">Search</button>
+    <button type="button" id="location">Current Location</button>
+  </div>
+
+  <div id="dynamicContent">
+  </div>
+
+  <div id="container">
+    <div id="map" class="full-width"></div>
+    <div id="weather-info" class="hidden"></div>
+  </div>
+  <!-- Linked my google maps api, and script.js file -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDlY3JVreynleuyfXuVYu1pyZ__HxeqQo&callback=initMap" async
+    defer></script>
+  <script src="assets/js/script.js"></script>
+
+</html>

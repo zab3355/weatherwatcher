@@ -1,0 +1,14 @@
+{
+  "name": "maps.api",
+  "version": "1.0.0",
+  "description": "A very simple server to serve google map data for RIT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "author": "Zach Brown",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.85.0"
+  }
+}
