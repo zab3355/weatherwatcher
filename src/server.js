@@ -42,7 +42,7 @@ var onRequest = function(req, response){
 };
 
 function getGeoCoordinatesFromAddress(address, callback) {
-	request(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=AIzaSyBDlY3JVreynleuyfXuVYu1pyZ__HxeqQo`, function(error, res, data){
+	request(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=API Key`, function(error, res, data){
 		if(!error && res.statusCode == 200) {
 			var data = JSON.parse(data);
 			data = data.results[0];
